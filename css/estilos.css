@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Euphoria+Script&family=PT+Sans+Narrow:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "PT Sans Narrow";
+    background-color: #0B0C08;
+}
+
+h1{
+    font-family: "Euphoria Script"
+}
+@media (min-width: 1400px){
+    .container{
+        max-width: 1320px;
+    }
+}
+
+@media (max-width: 1399px){
+    .container{
+        max-width: 1140px;
+    }
+
+    @media (max-width: 992px){
+        .container{
+            max-width: 960px;
+        }
+    }
+
+    @media (max-width: 768px){
+        .container{
+            max-width: 720;
+        }
+    }
+
+    @media (max-width: 576px){
+        .container{
+            width: 100%;
+        }
+    }
+}
+.container{
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+.cabecalho{
+    background-color: #5FDD9D;
+    height: 72px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 122px;
+    padding-right: 122px;
+}
+
+.marca{
+    font-size: 60px;
+    font-weight: 800;
+}
+
+.menu ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 448px;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+}
+
+@media (max-width: 768px){
+    .cabecalho{
+        padding: 50px;
+    }
+
+    .menu ul{
+     width: 270px;
+    }
+}
+
+@media (max-width: 576px){
+    .cabecalho{
+        padding: 10px;
+        display: block;
+        height: 100%;
+        text-align: center;
+    }
+
+    .menu ul{
+        width: 100%;
+        display: block;
+    }
+
+    .marca{
+        font-size: 74px;
+    }
+
+    .menu ul a{
+        padding-top: 5px;
+        padding-bottom: 5px;
+        display: block;
+    }
+}
+
+
+.conteudo-principal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 122px;
+    padding-right: 122px;
+    min-height: 700px;
+}
+
+.coluna-texto,
+.coluna-foto{
+    width: 50%;
+}
+
+.texto-titulo{
+    font-size: 64px;
+    font-weight: 900%;
+    font-family: 'Euphoria Script';
+    color: white;
+}
+
+.texto-corpo{
+    font-size: 24px;
+    font-weight: 400;
+    font-family: 'Euphoria Script';
+    line-height: 41px;
+    color: white;
+    margin: 29px 0 29px 0px;
+}
+
+.botao-principal{
+    display: inline-block;
+    text-align: center;
+    padding: 27px 93px;
+    background-color: #193828;
+    border-radius: 8px;
+    font-size: 32px;
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    font-family: 'Euphoria Script';
+}
+
+.coluna-foto{
+    text-align: right;
+}
+
+.foto-perfil{
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    box-shadow: #76F7BF 0 24px 48px 0;
+    filter: grayscale(0.6);
+    transition: all 0.8s ease;
+}
+
+.botao-principal:hover{
+    background-color: #11251b;
+}
+
+.foto-perfil:hover{
+    transform: rotate(-6deg);
+    filter: grayscale(0);
+}
+
+.fundo{
+    transform: translateX(calc(50% - 212px)) rotate(-6deg);
+    width: 500px;
+    height:500px;
+    background: #193828;
+    position: absolute;
+    z-index: -10;
+}
+
+.redes-sociais{
+    display: flex;
+    margin-top: 100px;
+}
+
+.redes-sociais a{
+    font-size: 55px;
+    color: #D0CFCE;
+    padding-right: 30px;
+}
+
+@media (max-width: 1399px){
+    .texto-titulo{
+        font-size: 60px
+    }
+    .foto-perfil{
+        width: 400px;
+        height: 400px;
+    }
+    
+    .fundo{
+        width: 400px;
+        height:400px;
+        transform: translateX(30%) rotate(-6deg);
+    }
+    .redes-sociais{
+        margin-top: 50px;
+    }
+
+    #campo{
+        position: absolute;
+        top: 74px;
+        left: 1106px;
+    }
+
+    #campo input{
+    font-size: 18px;
+    border-radius: 2px;
+    padding: 5px;
+    border: 0;
+    }
+}
+
+@media (max-width: 992px){
+    .texto-titulo{
+        font-size: 56px;
+    }
+    .foto-perfil{
+        width: 300px;
+        height: 300px
+    }
+
+    .fundo{
+        width: 300px;
+        height: 300px;
+        transform: translateX(50px) rotate(-6deg);
+    }
+    .texto-corpo{
+        line-height: 25px;
+        font-size: 20px;
+    }
+    .botao-principal{
+        padding: 27px 10px;
+        width: 100%;
+    }
+
+    .redes-sociais{
+        margin-top: 30px;
+    }
+    
+}
+
+@media (max-width: 768px){
+    .foto-perfil{
+        width: 100%;
+        max-width: 450px;
+        height: 450px;
+    }
+
+    .fundo{
+        display: none;
+    }
+    .conteudo-principal{
+        flex-flow: column-reverse;
+        padding: 20px;
+    }
+
+    .coluna-foto{
+        text-align: center;
+    }
+
+    .coluna-foto, .coluna-texto{
+        width: 100%;
+    }
+
+    .texto-titulo{
+       text-align: center;
+       margin-top: 20px;
+    }
+
+    .texto-corpo{
+        text-align: center;
+        font-size: 18px;
+        margin-top: 10px;
+    }
+
+    .redes-sociais{
+        margin-top: 50px;
+        justify-content: center;
+    }
+}
+
+#campo{
+    position: absolute;
+    top: 74px;
+    right: 131px;
+    display: none;
+}
+
+#campo input{
+    font-size: 18px;
+    border-radius: 2px;
+    padding: 5px;
+    border: 0;
+}
+
+.titulo-projeto{
+font-size: 30px;
+font-weight: bold;
+color: white;
+margin-top: 30px;
+font-family: 'Euphoria Script';
+}
+
+.linha-seta{
+    text-align: right;
+}
+
+.linha-seta a{
+    font-size: 30px;
+    color: white;
+}
+
+.texto-contato a{
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-family: 'PT Sans Narrow';
+    letter-spacing: 1px;
+}
+
+#formulario-contato input,
+#formulario-contato select,
+#formulario-contato textarea{
+     display: block;
+     width: 80%;
+     font-size: 16px;
+     font-family: 'PT Sans Narrow';
+     padding: 5px;
+     margin: 2px;
+}
+
+#formulario-contato button{
+    font-size: 16px;
+    padding: 10px;
+    text-align: center;
+    width: 200px;
+    background: none;
+    border: 7px double white;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 10px;
+    display: block;
+    cursor: pointer;
+}
