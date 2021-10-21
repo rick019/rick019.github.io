@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RK Designer</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
+<body>
+    <div class="container">
+        <header class="cabecalho">
+            <h1 class="marca">RK</h1>
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projetos.html">Projetos</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="#" onclick="MostrarCampoPesquisar()"><i class="fa fa-search"></i></a>
+                    <span id="campo">
+                        <input type="search" placeholder="Pesquisar">
+                    </span>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="conteudo-principal">
+            <div class="coluna-texto">
+                <h2 class="texto-titulo">Me mande uma mensagem</h2>
+                <p class="texto-corpo texto-contato"><a href="mailto:henrique2002h@outlook.com">henrique2002h@outlook.com</a>
+                    <br>
+                   ou me mande uma mensagem no  <a href="https://api.whatsapp.com/send?19989370371&text=Gostaria de mais informações" target="blank">whatsapp!</a>
+                </p>
+                <a href="#" class="botao-principal">Meus Projetos</a>
+                <ul class="redes-sociais">
+                    <li><a href="#"><i class="fa fa-github"></i></a></li>
+                    <li><a href="#"><i class="fa fa-whatsapp"></i></a></li>
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+            <div class="coluna-foto">
+                <form id="formulario-contato">
+                    <input id="campo-nome" placeholder="Nome">
+                    <input id="campo-telefone" placeholder="Telefone">
+                    <select id="campo-assunto">
+                        <option value="Elogio">Elogio</option>
+                        <option value="Sugestão">Sugestão</option>
+                        <option value="Orçamento">Orçamento</option>
+                        <option value="Outro">Outro</option>
+                    </select>
+                    <textarea id="campo-mensagem" placeholder="Digite sua mensagem"></textarea>
+                    <button type="submit" id="botao-enviar">Enviar</button>
+                </form>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
